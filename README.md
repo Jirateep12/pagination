@@ -1,4 +1,4 @@
-# pagination php
+### # php 😎
 
 ```php
 <nav class="d-flex justify-content-center mt-3" aria-label="Page navigation example">
@@ -44,134 +44,89 @@
   </ul>
 </nav>
 ```
-# pagination jquery
+### # javascript 😎
 
 ```javascript
 var data = [
   {
-    id: 1,
-    name: "Koke",
-    position: "CM",
+    name: "Ms. Russel Stokes",
+    birthday: "2022-03-21T13:03:29.133Z",
+    phone: "1-401-061-4740",
+    zip: "35696",
+    city: "Lake Lauryn",
+    email: "Wilhelm5@hotmail.com",
   },
   {
-    id: 2,
-    name: "Diego Godin",
-    position: "CB",
+    name: "Viviane Schmeler",
+    birthday: "2022-03-27T13:22:42.431Z",
+    phone: "(140) 397-8791 x086",
+    zip: "41462",
+    city: "Milobury",
+    email: "Myrtie_Hilll@gmail.com",
   },
   {
-    id: 3,
-    name: "Lodi",
-    position: "LB",
+    name: "Jairo McKenzie",
+    birthday: "2022-02-07T08:23:01.612Z",
+    phone: "(969) 635-5849 x44088",
+    zip: "83721-0489",
+    city: "Ashleyton",
+    email: "Jannie_Leffler76@yahoo.com",
   },
   {
-    id: 4,
-    name: "Saul Niguez",
-    position: "CM",
+    name: "Tristin Durgan",
+    birthday: "2022-06-23T22:43:15.582Z",
+    phone: "(189) 559-9823 x275",
+    zip: "79124",
+    city: "Lake Ashley",
+    email: "Laurie_Hilpert16@gmail.com",
   },
   {
-    id: 5,
-    name: "Luis Suarez",
-    position: "ST",
+    name: "Vince Christiansen DVM",
+    birthday: "2021-09-20T02:28:51.022Z",
+    phone: "(709) 147-1273 x899",
+    zip: "83367-8888",
+    city: "New Michaela",
+    email: "Fredy_Dicki34@hotmail.com",
   },
   {
-    id: 6,
-    name: "C.Ronaldo",
-    position: "ST",
+    name: "Jayden Barrows",
+    birthday: "2022-06-01T08:55:01.021Z",
+    phone: "069-088-4749",
+    zip: "80683",
+    city: "South Jacky",
+    email: "Hugh.Kirlin10@gmail.com",
   },
   {
-    id: 7,
-    name: "Yannick F. Carrasco",
-    position: "LM",
+    name: "Bertrand Jacobson II",
+    birthday: "2022-05-24T04:38:57.795Z",
+    phone: "222-176-9440",
+    zip: "32806",
+    city: "Port Alexandria",
+    email: "Chadrick14@gmail.com",
   },
   {
-    id: 8,
-    name: "Angle Correa",
-    position: "RM",
+    name: "Laisha Heathcote",
+    birthday: "2022-05-20T14:19:17.292Z",
+    phone: "1-423-340-1596 x6611",
+    zip: "93608-5700",
+    city: "Padbergport",
+    email: "Kenyon_Waelchi@yahoo.com",
   },
   {
-    id: 9,
-    name: "Y.Oblak",
-    position: "GK",
+    name: "Alfred Lang",
+    birthday: "2021-12-03T09:19:18.038Z",
+    phone: "394.047.4303 x66836",
+    zip: "16814",
+    city: "Larsonton",
+    email: "Caesar_Schiller36@yahoo.com",
   },
   {
-    id: 10,
-    name: "Miranda",
-    position: "CB",
-  },
-  {
-    id: 11,
-    name: "Jao Felix",
-    position: "ST",
-  },
-  {
-    id: 12,
-    name: "Gabi",
-    position: "CM",
-  },
-  {
-    id: 13,
-    name: "Tiago",
-    position: "CM",
-  },
-  {
-    id: 14,
-    name: "Saul Niguez",
-    position: "CM",
-  },
-  {
-    id: 15,
-    name: "Luis Suarez",
-    position: "ST",
-  },
-  {
-    id: 16,
-    name: "C.Ronaldo",
-    position: "ST",
-  },
-  {
-    id: 17,
-    name: "Yannick F. Carrasco",
-    position: "LM",
-  },
-  {
-    id: 18,
-    name: "Angle Correa",
-    position: "RM",
-  },
-  {
-    id: 19,
-    name: "Y.Oblak",
-    position: "GK",
-  },
-  {
-    id: 20,
-    name: "Miranda",
-    position: "CB",
-  },
-  {
-    id: 21,
-    name: "Koke",
-    position: "CM",
-  },
-  {
-    id: 22,
-    name: "Diego Godin",
-    position: "CB",
-  },
-  {
-    id: 23,
-    name: "Lodi",
-    position: "LB",
-  },
-  {
-    id: 24,
-    name: "Saul Niguez",
-    position: "CM",
-  },
-  {
-    id: 25,
-    name: "Luis Suarez",
-    position: "ST",
+    name: "Nathaniel Tremblay",
+    birthday: "2022-01-13T23:14:36.586Z",
+    phone: "(181) 267-1841",
+    zip: "93072",
+    city: "Orrinfurt",
+    email: "Calista43@yahoo.com",
   },
 ];
 
@@ -184,27 +139,30 @@ $(document).ready(() => {
 
 function render() {
   var html = "";
-  for (var i = (page - 1) * 3; i < page * 3; i++) {
+  for (var i = (page - 1) * 2; i < page * 2; i++) {
     if (i < data.length) {
       html += `
-              <tr>
-                  <td>${data[i].id}</td>
-                  <td>${data[i].name}</td>
-                  <td>${data[i].position}</td>
-              </tr>
-          `;
+        <tr>
+            <td>${data[i].name}</td>
+            <td>${data[i].birthday}</td>
+            <td>${data[i].phone}</td>
+            <td>${data[i].zip}</td>
+            <td>${data[i].city}</td>
+            <td>${data[i].email}</td>
+        </tr>
+    `;
     }
   }
   $("#tbody").html(html);
 
-  totalpage = Math.ceil(data.length / 3);
+  totalpage = Math.ceil(data.length / 2);
 
   var pagination_html = "";
 
   if (totalpage > 0) {
-    if (page > 1) {
-      pagination_html = `<li class="page-item" onclick="back_page()"><a class="page-link" href="#">Previous</a></li>`;
-    }
+    pagination_html = `<li class="page-item ${
+      page > 1 ? "" : "disabled"
+    }" onclick="back_page()"><a class="page-link" href="#">Previous</a></li>`;
     if (page > 3) {
       pagination_html += `<li class="page-item" id="page1" onclick="current_page(1)"><a class="page-link" href="#">1</a></li>`;
       pagination_html += `<li class="page-item"><a class="page-link">...</a></li>`;
@@ -242,9 +200,9 @@ function render() {
       pagination_html += `<li class="page-item"><a class="page-link">...</a></li>`;
       pagination_html += `<li class="page-item" id="page${totalpage}" onclick="current_page(${totalpage})"><a class="page-link" href="#">${totalpage}</a></li>`;
     }
-    if (page < totalpage) {
-      pagination_html += `<li class="page-item" onclick="next_page()"><a class="page-link" href="#">Next</a></li>`;
-    }
+    pagination_html += `<li class="page-item ${
+      page < totalpage ? "" : "disabled"
+    }" onclick="next_page()"><a class="page-link" href="#">Next</a></li>`;
   }
   $("#pagination").html(pagination_html);
 }
